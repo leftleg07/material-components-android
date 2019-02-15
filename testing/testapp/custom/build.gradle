@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+  api compatibility("appcompat")
+  api compatibility("core")
+
+  api project(fromPath("lib"))
+}
+
+android {
+  defaultConfig {
+    minSdkVersion 14
+    targetSdkVersion 27
+  }
+}

@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
 
 archivesBaseName = getArchivesBaseName(project.name)
 version = rootProject.ext.mdcLibraryVersion
@@ -129,8 +129,10 @@ task generateJavadocs(type: Javadoc, dependsOn: ':lib:compileReleaseJavaWithJava
   }
 }
 
-task getVersion << {
-  println version
+task getVersion {
+  doLast {
+    println version
+  }
 }
 
 task generateApiXml(type: Javadoc, dependsOn: ':lib:compileReleaseJavaWithJavac') {
@@ -195,8 +197,8 @@ def addResources(tasks) {
 
 uploadArchives {
   repositories {
-    mavenDeployer {
-      repository(url: rootProject.ext.mavenRepoUrl)
-    }
+//    mavenDeployer {
+//      repository(url: rootProject.ext.mavenRepoUrl)
+//    }
   }
 }

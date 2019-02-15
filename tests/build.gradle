@@ -19,16 +19,6 @@ android {
     targetSdkVersion 27
   }
 
-  targetProjectPath getTransformedProjectPath('testing/java/com/google/android/material/testapp')
+  targetProjectPath getTransformedProjectPath('testing/testapp')
 
-  sourceSets {
-    main.setRoot('./')
-    main.java.srcDir 'javatests'
-    main.java.excludes = [
-      '**/animation/**',
-      '**/build/**',
-      '**/theme/**',
-    ]
-    main.manifest.srcFile 'javatests/com/google/android/material/AndroidManifest.xml'
-  }
 }
