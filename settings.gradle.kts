@@ -1,12 +1,22 @@
 include(":lib")
 
 //include(":testing:testapp")
-include(":testing:testapp:animation")
 include(":testing:testapp:base")
 include(":testing:testapp:custom")
-include(":testing:testapp:theme")
+//include(":testing:testapp:animation")
+//include(":testing:testapp:theme")
 
 include(":testing:testapp:src:main:java:com:google:android:material:testapp:appbar")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:bottomnavigation")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:bottomsheet")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:coordinator")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:floatingactionbutton")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:navigation")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:snackbar")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:tabs")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:textfield")
+include(":testing:testapp:src:main:java:com:google:android:material:testapp:transformation")
+
 
 //
 //include(":tests")
