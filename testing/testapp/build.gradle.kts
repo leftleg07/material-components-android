@@ -14,7 +14,16 @@ dependencies {
 }
 
 val srcDirs = listOf(
-        "com/google/android/material/testapp/appbar"
+        "com/google/android/material/testapp/appbar",
+        "com/google/android/material/testapp/bottomnavigation",
+        "com/google/android/material/testapp/bottomsheet",
+        "com/google/android/material/testapp/coordinator",
+        "com/google/android/material/testapp/floatingactionbutton",
+        "com/google/android/material/testapp/navigation",
+        "com/google/android/material/testapp/snackbar",
+        "com/google/android/material/testapp/tabs",
+        "com/google/android/material/testapp/textfield",
+        "com/google/android/material/testapp/transformation"
 )
 
 android {
